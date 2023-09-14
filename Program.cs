@@ -241,8 +241,20 @@ class Program
     {
         Console.WriteLine("----------------------------------------------------------------------");
         Console.WriteLine("Atividade 10 - Médias aritmética, harmônica e geométrica ");
+        Console.WriteLine("Informe o valor a:");
+        double valorA = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Informe o valor b:");
+        double valorB = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("Informe o valor c:");
+        double valorC = Convert.ToDouble(Console.ReadLine());
 
+        double medAr = (valorA + valorB + valorC) / 3;
+        double medHar = 3 / (1 / valorA + 1 / valorB + 1 / valorC);
+        double medGeom = Math.Pow(valorA * valorB * valorC, 1.0 / 3.0);
 
+        Console.WriteLine($" Média Aritimética: {medAr}");
+        Console.WriteLine($" Média Harmônica: {medHar}");
+        Console.WriteLine($" Média Geométrica: {medGeom}");
 
         Console.WriteLine("----------------------------------------------------------------------");
     }
